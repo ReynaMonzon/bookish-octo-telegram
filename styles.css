@@ -1,0 +1,58 @@
+body {
+    background-color: #fff4f4;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.vintage-font {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    color: #d16ba5;
+}
+
+#heart-container {
+    margin-top: 50px;
+}
+
+#heart {
+    font-size: 2cm;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#heart:hover {
+    transform: scale(1.2);
+}
+
+#click-instruction {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.heart-rain {
+    position: absolute;
+    color: #d16ba5;
+    animation: fall 2s linear infinite;
+    opacity: 0;
+}
+
+.salmon-bg {
+    background-color: #FA8072;
+}
+
+.yellow-bg {
+    background-color: #FFD700;
+}
+
+@keyframes fall {
+    0% {
+        top: -50px;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
